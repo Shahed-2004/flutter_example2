@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:example_project/examples/media_query_example.dart';
-import 'package:example_project/examples/name_swap_with_provider.dart';
-import 'package:example_project/examples/onboarding_screen.dart';
-import 'package:example_project/examples/simple_layout_page.dart';
-import 'package:example_project/examples/single_child_scroll_view_example.dart';
-import 'package:example_project/examples/sliver_appbar_example.dart';
-import 'package:example_project/examples/wrap_example.dart';
+//import 'package:example_project/examples/media_query_example.dart';
+//import 'package:example_project/examples/name_swap_with_provider.dart';
+//import 'package:example_project/examples/onboarding_screen.dart';
+//import 'package:example_project/examples/simple_layout_page.dart';
+//import 'package:example_project/examples/single_child_scroll_view_example.dart';
+//import 'package:example_project/examples/sliver_appbar_example.dart';
+//import 'package:example_project/examples/wrap_example.dart';
 
 class ExampleItem {
   final String title;
@@ -29,7 +29,7 @@ class AllInOneScreen extends StatelessWidget {
       onTap: (context) {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => const SimpleLayoutPage()),
+          MaterialPageRoute(builder: (_) => const SimplelayoutPage()),
         );
       },
     ),

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-//import 'login_screen.dart';
-
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -17,17 +15,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     {
       "color": Colors.deepOrange,
       "title": "Welcome to SpeedTest",
-      "description": "Test your internet speed with accuracy."
+      "description": "Test your internet speed with accuracy.",
+      "image": "assets/images/welcome.png", // مسار الصورة
     },
     {
       "color": Colors.green,
       "title": "Real-Time Results",
-      "description": "Get real-time speed test results and insights."
+      "description": "Get real-time speed test results and insights.",
+      "image": "assets/images/results.png", // مسار الصورة
     },
     {
       "color": Colors.blue,
       "title": "Start Your Journey",
-      "description": "Let's get started and test your speed now!"
+      "description": "Let's get started and test your speed now!",
+      "image": "assets/images/start.png", // مسار الصورة
     },
   ];
 
@@ -55,6 +56,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Image.asset(
+                        onboardingPages[index]['image'],
+                        height: 200, // ارتفاع الصورة
+                        width: 200, // عرض الصورة
+                      ),
+                      const SizedBox(height: 20),
                       Text(
                         onboardingPages[index]['title'],
                         style: const TextStyle(
